@@ -1,0 +1,76 @@
+package net.polykardz;
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        String Pregunta1 = "366";
+        String Pregunta2 = "Marte";
+        String Pregunta3 = "México";
+
+        String Marcador1 = "0 de 3 Preguntas correctas";
+        String Marcador2 = "1 de 3 Preguntas correctas";
+        String Marcador3 = "2 de 3 Preguntas correctas";
+        String Marcador4 = "3 de 3 Preguntas correctas";
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Primera pregunta: ¿Cuantos días tiene un año bisiesto?");
+        String Usuario1 = scanner.next();
+
+        if (Usuario1.equals(Pregunta1)) {
+            System.out.println("Correcto");
+        } else {
+            System.out.println("Incorrecto, la respuesta era: " + Pregunta1);
+        }
+
+        if (Usuario1.equals(Pregunta1)) {
+            System.out.println(Marcador2);
+        } else {
+            System.out.println(Marcador1);
+        }
+
+
+        System.out.println("Segunda pregunta: ¿Que planeta es comúnmente llamado el planeta rojo");
+        String Usuario2 = scanner.next();
+
+        if (Usuario2.equals(Pregunta2)) {
+            System.out.println("Correcto");
+        } else {
+            System.out.println("Incorrecto, la respuesta era: " + Pregunta2);
+        }
+
+        if (Usuario2.equals(Pregunta2) && Usuario1.equals(Pregunta1)) {
+            System.out.println(Marcador3);
+        } else if (Usuario2.equals(Pregunta2) || Usuario1.equals(Pregunta1)) {
+            System.out.println(Marcador2);
+        } else {
+            System.out.println(Marcador1);
+        }
+
+
+        System.out.println("¿Que país tiene la mejor gastronomía de toda América?");
+        String Usuario3 = scanner.next();
+
+        if (Usuario3.equals(Pregunta3)) {
+            System.out.println("Correcto");
+        } else {
+            System.out.println("Incorrecto, la respuesta era: " + Pregunta3);
+        }
+
+        if (Usuario3.equals(Pregunta3) && Usuario2.equals(Pregunta2) && Usuario1.equals(Pregunta1)) {
+            System.out.println(Marcador4);
+        } else if (Usuario3.equals(Pregunta3) && Usuario2.equals(Pregunta2) || Usuario1.equals(Pregunta1)) {
+            System.out.println(Marcador3);
+        } else if (Usuario2.equals(Pregunta2) && Usuario1.equals(Pregunta1)) {
+            System.out.println(Marcador3);
+        } else if (Usuario2.equals(Pregunta2) || Usuario1.equals(Pregunta1)) {
+            System.out.println(Marcador2);
+        } else if (Usuario3.equals(Pregunta3) || Usuario2.equals(Pregunta2) || Usuario1.equals(Pregunta1)) {
+            System.out.println(Marcador2);
+        } else { System.out.println(Marcador1); }
+        
+        }
+    }

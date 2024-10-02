@@ -1,0 +1,27 @@
+//Ternary
+
+package net.polykardz;
+
+
+public class Main {
+    public static void main(String[] args) {
+     /* Operadores ternarios */
+
+     int examen = 60;
+     int regalo = 0;
+
+     if(examen >= 60) { regalo = 10;}
+     else {regalo = 1;}
+
+     System.out.println(examen);
+     System.out.println(regalo);
+
+// Operador Ternario, este simplemente te discierne el
+        // resultado que dará si es verdadero o falso
+
+     regalo = (examen >=60) ? 10:1;
+     System.out.println(regalo);
+
+
+    }
+}

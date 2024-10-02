@@ -1,3 +1,5 @@
+//Basics
+
 int= Número pequeño
 float= Número con decimal (presición de 7 decimales)
 double= Número con decimal y letra (presición de 15 decimales)

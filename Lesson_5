@@ -1,0 +1,37 @@
+package net.polykardz;
+
+public class Main {
+    public static void main(String[] args) {
+        int x = 100;
+        int y = 20;
+
+        //Suma
+
+        int result = x + y;
+        System.out.println(result);
+
+        /* Resta
+        Una vez declarado el valor del calculo no necesito volver a
+        declararlo, solamente cambiar el valor después del "=" para hacer
+        un cálculo diferente
+         */
+
+        result = x - y;
+        System.out.println(result);
+
+        //Multiplicación
+        result = x * y;
+        System.out.println(result);
+
+        //Sobrante "%"
+
+        result = 23 % 3;
+        System.out.println(result);
+
+        //Métodos matemáticos
+        System.out.println("----");
+        System.out.println(Math.max(x,y));
+        System.out.println(Math.min(x,y));
+        System.out.println(Math.abs(-568.86));
+    }
+}

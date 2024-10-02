@@ -1,0 +1,22 @@
+package net.polykardz;
+
+public class Main {
+    public static void main(String[] args) {
+        // && (AND)
+        // || (OR)
+        // ! (NOT / NEGATION)
+
+        boolean peras = true;
+        boolean manzanas = false;
+
+        boolean pm = peras && manzanas;
+        boolean pom = peras || manzanas;
+        boolean pnm = !pom;
+
+        System.out.println("¿Peras y manzanas?: " + pm);
+        // Falso porque no hay peras Y manzanas
+        System.out.println("¿Peras o manzanas?: " + pom);
+        // Verdadero porque hay peras O manzanas
+        System.out.println("¿Ni peras ni manzanas?: " + pnm);
+    }   // Falso porque no hay peras NI manzanas
+}

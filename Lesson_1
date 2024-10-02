@@ -1,0 +1,17 @@
+int= Número pequeño
+float= Número con decimal (presición de 7 decimales)
+double= Número con decimal y letra (presición de 15 decimales)
+
+byte= numeros desde -128 a 127
+short= números desde -32768 a 32767
+long= números grandes
+
+boolean= guarda si es verdadero (1) o falso (0)
+ej: boolean BuenMod = true;
+
+char= 1 letra
+string = secuencia de letras
+ej: String message = "Hola mundo";
+ej: Strong test = null; //No es cero, es conjunto vacío
+
+

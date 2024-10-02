@@ -1,0 +1,42 @@
+package net.polykardz;
+
+
+public class Main {
+    public static void main(String[] args) {
+        String sentence = "Aprendiendo java";
+        System.out.println(sentence);
+        System.out.println("Largo de la oración: " + sentence.length());
+
+        //Mayúsculas y Minúsculas
+        System.out.println("Gritando: " + sentence.toUpperCase());
+        System.out.println("Susurrando: " + sentence.toLowerCase());
+
+        //IndexOf
+        System.out.println("La palabra 'JAVA' está en la posición: " + sentence.indexOf("java"));
+
+        //Replace
+        System.out.println(sentence.replace("java", "C#"));
+
+        //Casilla vacía
+        String x = "";
+        boolean empty = x.isEmpty();
+        System.out.println("¿La casilla está vacía? " + empty);
+
+        //startsWith and endsWith
+        System.out.println("¿La casilla empieza con A? " + sentence.startsWith("A"));
+        System.out.println("¿La casilla termina con J? " + sentence.endsWith("J"));
+
+        //contains
+        System.out.println("¿La casilla contiene la palabra java? " + sentence.contains("java"));
+
+        //chartAt
+        System.out.println("¿Qué letra está en la segunda posición? " + sentence.charAt(2));
+
+        //substring
+        String Felicidad = "Infeliz";
+        Felicidad = Felicidad.substring(2);
+        System.out.println(Felicidad);
+
+
+    }
+}

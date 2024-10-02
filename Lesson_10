@@ -1,0 +1,20 @@
+package net.polykardz;
+
+
+public class Main {
+    public static void main(String[] args) {
+        int Medalla = 1;
+
+// Esta funcion es un "pariente" de la funcion else, if
+// Y su sintaxis es la siguiente:
+
+        switch (Medalla) {
+            case 1: System.out.println("Medalla de oro"); break;
+            case 2: System.out.println("Medalla de plata"); break;
+            case 3: System.out.println("Medalla de bronce"); break;
+            default: System.out.println("No medallas para ti :)");
+        }
+    }
+}
+====================================================================================
+Medalla de oro

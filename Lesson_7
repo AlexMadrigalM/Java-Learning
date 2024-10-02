@@ -1,0 +1,57 @@
+package net.polykardz;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        boolean SI = true;
+        boolean NO = false;
+
+        System.out.println("Le puchaste a SI: " + SI);
+        System.out.println("Le puchaste a NO: " + NO);
+
+    int puntuación = 70;
+    /*Cambiando la puntuación podemos darnos cuenta
+     de que el número dará una respuesta en positivo o falso
+     dependiendo de los límites de la función boolean
+     */
+
+    boolean Aprobaste = puntuación > 59;
+    System.out.println("Aprobaste: "+ Aprobaste + " con " + puntuación + " puntos!");
+
+    boolean Reprobaste = !Aprobaste; //Negarlo (!)
+        System.out.println("Reprobaste: "+ Reprobaste);
+
+        // verdero se convierte en falso
+        // falso se convierte en verdadero
+
+
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Calificación: ");
+    String Calificación = scanner.nextLine();
+
+   String Cal = Calificación;
+    System.out.println("Esta es tu calificación: " + Cal);
+
+int convertidor = Integer.parseInt(Cal); // Integer.parseInt("Variable a convertir")
+                                         // Sirve para convertir un valor
+                                         // String a un valor int
+    boolean Pasaste = convertidor > 59;
+        System.out.println("Pasaste: "+ Pasaste);
+    boolean No_Pasaste = !Pasaste;
+        System.out.println("No pasaste: "+ No_Pasaste);
+
+    }
+}
+
+====================================================================================
+
+Le puchaste a SI: true
+Le puchaste a NO: false
+Aprobaste: true con 70 puntos!
+Reprobaste: false
+Calificación: 
+90
+Esta es tu calificación: 90
+Pasaste: true
+No pasaste: false

@@ -1,0 +1,19 @@
+// = Una linea comentada
+
+/*
+*
+*
+*/ = Varias lineas comentadas
+
+// Declarar variables
+int "nombre de la variable";
+
+// Asignar valor a variables
+"nombre de la variable" = "valor";
+
+//Declarar y Asignar (Initializing)
+int "nombre de la variable" = "valor";
+
+// Acceder variables/metodos de objetos
+String s = "Hola mundo";
+s.lenght();

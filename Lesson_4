@@ -1,0 +1,18 @@
+package net.polykardz;
+
+public class Main {
+    public static void main(String[] args) {
+        int a231 = 587;
+        System.out.println(a231);
+    }
+}
+====================================================================================
+
+// Incoherencia en los códigos
+
+java.lang.NullPointerException
+
+// Algo en rojo en el código
+
+Posiblemente falte declarar variables (O alguna otra situación)
+

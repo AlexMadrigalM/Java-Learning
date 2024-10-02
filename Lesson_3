@@ -1,0 +1,51 @@
+print("Hola Mundo");
+println("Hola Mundo1");
+
+//El resultado es el siguiente:
+Hola MundoHola Mundo1
+
+// + es para agregar una variable
+int x = 10;
+System.out.println("Un valor cualquiera: " + x);
+
+//El resultado es el siguiente:
+Un valor cualquiera: 10
+
+//Scanner sirve para poner una linea en la que el usuario puede añadir valores
+
+Scanner scanner = new Scanner(System.in);
+System.out.println("Nombre de usuario: ");
+
+/*String "input" es el valor asignado con el cual el usuario 
+*agregará su nick
+*/
+String input = scanner.nextLine();
+
+System.out.println("Tu nombre de usuario es: " + input);
+
+====================================================================================
+
+package net.polykardz;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("Hola Mundo!");
+
+        int x = 10;
+        System.out.println("Un valor cualquiera: " + x);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nombre de usuario: ");
+        String input = scanner.nextLine();
+
+        System.out.println("Tu nombre de usuario es: " + input);
+
+        /* String "input" es el valor asignado con el cual el usuario
+        * agregará su nick
+         */
+
+    }
+}

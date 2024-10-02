@@ -1,0 +1,27 @@
+package net.polykardz;
+
+
+public class Main {
+    public static void main(String[] args) {
+        // CASTING o convertir un tipo de dato en otro
+
+        int prestamo = 500;
+        float tasa_de_interes = 0.15f;
+
+        int interes = prestamo * (int)tasa_de_interes;
+        System.out.println("Pago final : " + interes);
+
+        float x = 50.5f + 20.6f;
+        System.out.println(x);
+
+        int otro = (int)x;
+        System.out.println(otro);
+
+        /* Se añade entre parentesis () antes del valor
+         declarado el tipo de dato al que queremos
+         convertir el valor, aun así, se toma en cuenta
+         su forma original
+        */ 
+        
+    }
+}

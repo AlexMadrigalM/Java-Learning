@@ -1,0 +1,64 @@
+package net.polykardz;
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        String Pregunta1 = "366";
+        String Pregunta2 = "Marte";
+        String Pregunta3 = "México";
+
+        int Puntos = 0;
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Primera pregunta: ¿Cuantos días tiene un año bisiesto?");
+        String Usuario1 = scanner.next();
+
+        if (Usuario1.equals(Pregunta1)) {
+            Puntos++;
+            System.out.println("Correcto");
+        } else {
+            System.out.println("Incorrecto, la respuesta era: " + Pregunta1);
+        }
+
+        System.out.println("Tu puntuación es de: " + Puntos + " puntos");
+
+    System.out.println("");
+        System.out.println("Segunda pregunta: ¿Que planeta es comúnmente llamado el planeta rojo?");
+        String Usuario2 = scanner.next();
+
+        if (Usuario2.equals(Pregunta2)) { Puntos++;
+            System.out.println("Correcto");
+        } else {
+            System.out.println("Incorrecto, la respuesta era: " + Pregunta2);
+        }
+
+        System.out.println("Tu puntuación es de: " + Puntos + " puntos");
+
+    System.out.println("");
+        System.out.println("¿Que país tiene la mejor gastronomía de toda América?");
+        String Usuario3 = scanner.next();
+
+        if (Usuario3.equals(Pregunta3)) {
+            System.out.println("Correcto"); Puntos++;
+        } else {
+            System.out.println("Incorrecto, la respuesta era: " + Pregunta3);
+        }
+
+        System.out.println("Tu puntuación es de: " + Puntos + " puntos");
+
+    System.out.println("");
+        System.out.println("Tu puntuación total es de: " + Puntos + " puntos");
+        System.out.println("Comentarios:");
+        switch (Puntos) {
+            case 1: System.out.println("¿Estudiaste poco?"); break;
+            case 2: System.out.println("Muy buen desempeño"); break;
+            case 3: System.out.println("¡Excelente!, ¡Respondiste todo bien!"); break;
+            default: System.out.println("Necesitas estudiar urgentemente"); break;
+        }
+
+        }
+    }

@@ -1,0 +1,71 @@
+package net.polykardz;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+ int examen1 = 58;
+ int examen2 = 86;
+
+
+ if(examen1 >= 60) {
+     System.out.println("Pasaste el examen 1 con: " + examen1 + " puntos");
+ } else {
+     System.out.println("No pasaste el examen 1");
+ }
+
+ if(examen2 >= 60) {
+            System.out.println("Pasaste el examen 2 con: " + examen2 + " puntos");
+ } else {
+     System.out.println("No pasaste el examen 2");
+ }
+
+//Ingresamos un scanner para poder escribir la puntuación
+
+ Scanner scanner = new Scanner(System.in);
+ System.out.print("Ingrese su puntuacion: ");
+ int puntuacion1 = scanner.nextInt();
+
+ // La función SI (if) la utilizamos para comparar, si no pasa una cosa
+ // Entonces (else) pasará la siguiente
+
+ if (puntuacion1 > 59) {
+     System.out.println("Pasaste con una puntuación de: " + puntuacion1);
+        } else { System.out.println("No pasaste");
+        }
+
+ //Lo mismo con el segundo ejemplo
+ Scanner scanner2 = new Scanner(System.in);
+ System.out.print("Ingrese su puntuacion: ");
+ int puntuacion2 = scanner2.nextInt();
+
+ if (puntuacion2 > 59) {
+     System.out.println("Pasaste con una puntuación de: " + puntuacion2);
+ } else { System.out.println("No pasaste");
+ }
+
+ // Si pasamos ambos examenes, nos felicitarán, si reprobamos, nos regañan
+ // Si pasamos alguno de los examenes, nos reconfortan
+
+if(puntuacion1 > 59  && puntuacion2 > 59) {
+    System.out.println("Felicidades, pasaste ambos examenes!");
+} else if (puntuacion1 < 60 && puntuacion2 < 60) {
+    System.out.println("Que mal! reprobaste ambos examenes!");
+} else {System.out.println("Not bad, pasaste 1 examen");
+    }
+
+// Parentesis aparte: para pedir al usuario que escriba 2 lineas
+// Se usa la siguiente sintaxis
+
+int Examen_1 = 1;
+int Examen_2 = 2;
+
+Scanner scanner3 = new Scanner(System.in);
+System.out.print("Linea 1: ");
+Examen_1 = scanner.nextInt();
+System.out.print("Linea 2: ");
+Examen_2 = scanner.nextInt();
+
+System.out.print("Ambos resultados: " + Examen_1 + " y " + Examen_2);
+    }
+}

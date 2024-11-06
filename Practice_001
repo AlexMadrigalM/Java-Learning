@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        /*  Ejercicio de lógica de programación:
+        Pide al usuario que ingrese su edad y determina si es un niño (0-12), adolescente (13-17),
+        adulto (18-64) o adulto mayor (65+)
+         */
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Inserta tu edad:");
+        String EdadUsuario = scanner.nextLine();
+
+        int Edad = Integer.parseInt(EdadUsuario);
+
+       if (Edad < 13) {
+           System.out.println("Eres un niño");}
+       else if (Edad < 18) {
+           System.out.println("Eres un adolescente");}
+       else if (Edad < 65) {
+           System.out.println("Eres un adulto");}
+       else if (Edad > 65) {
+           System.out.println("Vete pidiendo el ataud Pa'");}
+       else {System.out.println("¿?");}
+         }
+       }
